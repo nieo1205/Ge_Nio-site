@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>영상 선택</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 로그인 -->
+<div id="loginContainer" class="container">
+
+<h2>로그인</h2>
+
+<div class="input-box">
+<label>이름</label>
+<input type="text" id="name">
+</div>
+
+<div class="input-box">
+<label>비밀번호</label>
+<input type="password" id="password">
+</div>
+
+<button onclick="login()">로그인</button>
+<div id="message"></div>
+
+</div>
+
+
+<!-- 선택 화면 -->
+<div id="choiceContainer" style="display:none;">
+
+<h1 class="title">콘텐츠 선택</h1>
+
+<div class="choice-grid">
+
+<div class="choice-card" onclick="playVideo('xrYWlhhfD4w')">
+<img src="https://img.youtube.com/vi/xrYWlhhfD4w/maxresdefault.jpg">
+<p>VAGA GP 영상</p>
+</div>
+
+<div class="choice-card" onclick="playVideo('tXR4-ahomuY')">
+<img src="https://img.youtube.com/vi/tXR4-ahomuY/maxresdefault.jpg">
+<p>추천 노래</p>
+</div>
+
+<a href="https://www.racingmaster.game/kr/" target="_blank" class="choice-card">
+<img src="https://i.namu.wiki/i/5d4_OK-Z1nUcK2k6PjxIcB0JF5SzFEulNYdixepqASG5kqZ-2qLmEmwndy-VyAkka9e1YRNLenoRG7-ukSD5Xw.webp">
+<p>추천 게임</p>
+</a>
+
+<div class="choice-card discord" onclick="joinDiscord()">
+<img src="https://i.imgur.com/6W1sFmZ.png">
+<p>NGV 디코 참여</p>
+</div>
+
+</div>
+</div>
+
+
+<!-- 영상 화면 -->
+<div id="videoScreen" style="display:none;">
+
+<iframe id="ytPlayer"
+allow="autoplay"
+allowfullscreen></iframe>
+
+<button id="backBtn" onclick="goBack()">뒤로가기</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
