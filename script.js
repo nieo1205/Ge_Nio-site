@@ -35,13 +35,11 @@ document.getElementById("videoScreen").style.display = "block";
 
 }
 
-
 function joinDiscord(){
 
 window.open("https://discord.gg/GtXZMKSAaf","_blank");
 
 }
-
 
 /* 뒤로가기 버튼 */
 
@@ -53,7 +51,6 @@ document.getElementById("choiceContainer").style.display = "block";
 document.getElementById("ytPlayer").src = "";
 
 }
-
 
 /* 엔터키 로그인 */
 
