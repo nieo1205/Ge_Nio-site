@@ -1,3 +1,4 @@
+//이 사이트는 개인 테스트용입니다.
 function showIntro(){
 document.getElementById("startContainer").style.display = "none";
 document.getElementById("introContainer").style.display = "block";
